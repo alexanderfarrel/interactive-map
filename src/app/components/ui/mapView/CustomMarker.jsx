@@ -13,13 +13,13 @@ export default function CustomMarker({
   const router = useTransitionRouter();
   const customIcon = userData?.answeredKuis?.includes(titleFormat)
     ? new L.Icon({
-        iconUrl: "/images/greenLocation.png",
+        iconUrl: "/images/greenLocation.webp",
         iconSize: [32, 32],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32],
       })
     : new L.Icon({
-        iconUrl: "/images/redLocation.png",
+        iconUrl: "/images/redLocation.webp",
         iconSize: [32, 32],
         iconAnchor: [16, 32],
         popupAnchor: [0, -32],

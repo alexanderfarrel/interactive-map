@@ -37,7 +37,7 @@ export default function Navbar({ isFixHeight = false }) {
               onTransitionReady: PageAnimation,
             });
           }}
-          src="/images/smasa.png"
+          src="/images/smasa.webp"
           alt="logo smasa"
           width={40}
           height={50}
