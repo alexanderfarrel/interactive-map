@@ -3,6 +3,7 @@
 import { MapContainer, TileLayer, useMap } from "react-leaflet";
 import CustomMarker from "../../ui/mapView/CustomMarker";
 import { useEffect, useState } from "react";
+import { toast } from "sonner";
 // markersData.ts
 export const markersData = [
   {
@@ -124,6 +125,7 @@ function NextMarkerButton({ setMarkerNow, markerNow }) {
       map.flyTo(nextMarker.position, 15);
       setMarkerNow(markersData.indexOf(nextMarker));
     } else {
+      setUserData(localStorage.getItem("userData"));
       const firstUnanswered = markersData.find((m) => {
         return !userData?.answeredKuis?.includes(titleFormat(m.title));
       });
@@ -131,6 +133,8 @@ function NextMarkerButton({ setMarkerNow, markerNow }) {
       if (firstUnanswered) {
         map.flyTo(firstUnanswered.position, 15);
         setMarkerNow(markersData.indexOf(firstUnanswered));
+      } else {
+        toast.success("Semua kuis telah diselesaikan");
       }
     }
   };
