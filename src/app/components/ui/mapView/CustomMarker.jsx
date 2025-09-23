@@ -1,5 +1,6 @@
 import { useTransitionRouter } from "next-view-transitions";
 import Image from "next/image";
+import { useEffect, useRef } from "react";
 import { Marker, Popup } from "react-leaflet";
 
 export default function CustomMarker({
@@ -7,7 +8,23 @@ export default function CustomMarker({
   imageUrl = "",
   title,
   description,
+  isActive,
 }) {
+  const markerRef = useRef();
+
+  useEffect(() => {
+    const timeout =
+      isActive && markerRef?.current
+        ? setTimeout(() => {
+            markerRef.current.openPopup();
+          }, 750)
+        : null;
+
+    return () => {
+      if (timeout) clearTimeout(timeout);
+    };
+  }, [isActive]);
+
   const userData = JSON.parse(localStorage.getItem("userData"));
   const titleFormat = title.split("_").join(" ");
   const router = useTransitionRouter();
@@ -26,7 +43,7 @@ export default function CustomMarker({
       });
 
   return (
-    <Marker position={position} icon={customIcon}>
+    <Marker position={position} icon={customIcon} ref={markerRef}>
       <Popup className="w-[250px]">
         <div className="flex flex-col text-center justify-center max-w-[250px] w-full">
           {imageUrl !== "" && (

@@ -24,7 +24,7 @@ export default function Navbar({ isFixHeight = false }) {
   if (!mounted) return null;
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 h-[3.5rem] transition-all duration-500 z-50 ${
+      className={`fixed top-0 left-0 right-0 h-[3.5rem] transition-all duration-500 z-50 select-none ${
         scrollY > 0 ? "shadow-xl backdrop-blur-sm" : "shadow-none"
       } ${isFixHeight && "shadow-xl backdrop-blur-sm"} bg-linear-to-b`}
     >
