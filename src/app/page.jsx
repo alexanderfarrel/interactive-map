@@ -36,13 +36,11 @@ export default function Home() {
     router.refresh();
   };
 
-
   return (
     <>
       <Navbar isFixHeight />
       <div className="w-full min-h-[100dvh] flex flex-col p-5 pb-0 relative">
         <div className="w-full h-full max-w-6xl mx-auto border-4 border-orange-400 mt-12 relative">
-         
           <MapView />
         </div>
         <div className="flex justify-between my-auto items-center px-1">

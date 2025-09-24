@@ -3,23 +3,42 @@ const detailData = [
     title: "Candi Brahu",
     article: [
       {
-        p: `Candi Brahu terletak di kawasan Trowulan, Mojokerto, Jawa Timur. Candi ini termasuk salah satu peninggalan penting dari era Kerajaan Majapahit, meski ada dugaan bahwa pembangunannya justru sudah dimulai sejak masa Mpu Sindok (abad ke-10 M, Wangsa Isyana).`,
+        p: `Candi Brahu terletak di Trowulan, Kabupaten Mojokerto, Jawa Timur, yang sejak lama dikenal sebagai pusat Kerajaan Majapahit. Kawasan Trowulan sendiri dianggap sebagai kota kuno terbesar di Asia Tenggara pada masanya, sehingga keberadaan Candi Brahu memiliki posisi penting dalam memahami sejarah politik, keagamaan, dan budaya Jawa klasik.
+`,
       },
       {
-        p: `Nama "Brahu" diduga berasal dari kata Wanaru atau Warahu, yang disebut dalam kitab Negarakertagama. Menariknya, catatan sejarah menyebutkan bahwa candi ini pernah digunakan sebagai tempat pembakaran jenazah raja-raja Majapahit (upacara sraddha), meskipun bukti arkeologisnya masih jadi perdebatan.`,
+        p: `Nama "Brahu" diperkirakan berasal dari kata Wanaru atau Warahu, yang tercantum dalam kakawin Negarakertagama karya Mpu Prapanca pada abad ke-14 M. Kitab ini menyebutkan deretan bangunan suci di wilayah Majapahit, dan Brahu termasuk di dalamnya. Namun, tidak ada keterangan rinci mengenai fungsi spesifiknya, sehingga menimbulkan banyak tafsir di kalangan sejarawan.
+`,
       },
       {
-        p: `Berbeda dengan banyak candi di Jawa Tengah yang terbuat dari batu andesit, Candi Brahu justru terbuat dari bata merah, khas arsitektur Majapahit. Tingginya sekitar 20 meter dengan denah persegi panjang. Beberapa ciri menarik:`,
+        p: `Walaupun sering diasosiasikan dengan Majapahit (1293–1527 M), sejumlah arkeolog meyakini bahwa Candi Brahu justru dibangun lebih awal, kemungkinan sejak era Mpu Sindok (abad ke-10 M) dari Wangsa Isyana. Hal ini diperkuat oleh dugaan adanya kesinambungan tradisi arsitektur Jawa Timur sejak masa Medang hingga Majapahit. Dengan demikian, Brahu bisa jadi merupakan salah satu bangunan sakral yang mengalami renovasi atau pemanfaatan ulang oleh Majapahit.
+`,
+      },
+      {
+        p: `Catatan tradisi lisan maupun sumber sekunder menyebutkan bahwa Candi Brahu pernah berfungsi sebagai tempat upacara sraddha, yaitu ritual kremasi dan penghormatan terhadap arwah raja-raja Majapahit. Upacara sraddha adalah tradisi Hindu-Buddha Jawa kuno yang dilaksanakan 12 tahun setelah seorang raja wafat. Dalam ritual ini, jenazah dibakar, abunya ditempatkan dalam bejana suci, lalu disemayamkan dalam candi perwujudan. Namun, hingga kini, bukti arkeologis berupa abu, relik, atau pratima (arca perwujudan) tidak ditemukan di Candi Brahu. Hal ini membuat teori tersebut masih diperdebatkan. Beberapa pakar menduga bahwa Brahu hanya berfungsi simbolis, atau mungkin sudah dijarah dan kehilangan isi aslinya sejak lama.
+`,
+      },
+      {
+        p: `Candi Brahu memiliki ciri khas arsitektur Majapahit yang berbeda dari candi-candi Jawa Tengah seperti Borobudur atau Prambanan. Berikut adalah ciri khas dari Candi Brahu :`,
       },
       {
         l: [
-          `Bagian kaki candi lebih lebar, mengecil ke atas.`,
-          `Tidak ditemukan arca utama di dalamnya, sehingga fungsi awalnya masih menjadi bahan kajian.`,
-          `Terdapat relung-relung kecil, mungkin dahulu berisi arca perwujudan atau sesaji.`,
+          `Bahan bangunan: seluruhnya terbuat dari bata merah tanpa perekat semen, melainkan menggunakan teknik interlocking dan perekat organik (getah/kapur).`,
+          ` Ukuran: tinggi sekitar 20 meter, dengan denah persegi panjang. `,
+          `Struktur : bagian kaki candi melebar, lalu mengecil ke atas, memberikan kesan monumental namun tetap ringan.`,
+          `Relung-relung kecil: terdapat pada dinding, yang diduga dahulu berisi arca perwujudan, sesaji, atau simbol kosmologis.`,
+          `Ruang dalam: tidak ditemukan arca utama maupun lingga-yoni, yang memperkuat dugaan bahwa Brahu bukan candi pemujaan dewa.`,
         ],
       },
       {
-        p: `Para arkeolog berpendapat bahwa Candi Brahu bukan candi pemujaan dewa, melainkan candi krematorium (tempat pembakaran abu jenazah raja). Namun, sampai saat ini, belum ditemukan sisa-sisa abu atau relik, sehingga fungsinya masih misterius.`,
+        p: `Hingga kini, fungsi asli Candi Brahu masih misterius yakni :`,
+      },
+      {
+        l: [
+          `Beberapa teori yang berkembang: Candi krematorium - sebagai tempat pembakaran jenazah raja (sraddha). `,
+          `Candi peringatan - didirikan untuk menghormati leluhur tanpa menyimpan abu atau relik Bangunan awal`,
+          `Majapahit - simbol legitimasi yang diwarisi dari era Mpu Sindok dan diteruskan oleh Majapahit.`,
+        ],
       },
     ],
     question: `Bayangkan kamu adalah seorang arkeolog yang sedang meneliti Candi Brahu. Saat melakukan ekskavasi kecil di sekitar kaki candi, kamu menemukan pecahan keramik Tiongkok abad ke-14 dan sisa abu pembakaran yang sudah bercampur dengan tanah. Sebagai arkeolog, apa langkah yang harus kamu ambil untuk menentukan fungsi asli Candi Brahu? `,
