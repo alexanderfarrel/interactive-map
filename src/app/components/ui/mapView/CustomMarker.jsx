@@ -46,7 +46,7 @@ export default function CustomMarker({
     <Marker position={position} icon={customIcon} ref={markerRef}>
       <Popup className="w-[250px]">
         <div className="flex flex-col text-center justify-center max-w-[250px] w-full">
-          {imageUrl !== "" && (
+          {imageUrl != "" && (
             <Image
               src={imageUrl}
               alt=""

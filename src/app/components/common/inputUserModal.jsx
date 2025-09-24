@@ -6,6 +6,7 @@ export default function InputUserModal({ onClose }) {
   const [name, setName] = useState("");
   const [closed, setClosed] = useState(false);
   const handleSubmit = () => {
+    if (name.length < 3) return toast.error("Nama minimal 3 karakter");
     const stored = localStorage.getItem("userData");
     setClosed(true);
     if (stored && stored != null && stored != "null") {
