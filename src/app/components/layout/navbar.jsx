@@ -50,7 +50,7 @@ export default function Navbar({ isFixHeight = false, custState = false }) {
         />
         <div>
           <h1 className="font-semibold text-xl max-w-[200px] truncate">{`Halo ${
-            userData.name || "User"
+            userData?.name || "User"
           }`}</h1>
         </div>
       </div>
