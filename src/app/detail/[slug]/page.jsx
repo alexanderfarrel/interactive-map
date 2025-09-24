@@ -59,7 +59,7 @@ export default function Detail({ params }) {
         <main className="flex flex-col items-center p-4 max-w-4xl mx-auto gap-6 mt-7">
           <h1 className="font-bold text-4xl mt-5">{slugFormat}</h1>
           <Image
-            src={`/images/location/Candi_Gentong.webp`}
+            src={`/images/location/${slug}.webp`}
             alt=""
             width={1000}
             height={1000}
