@@ -6,11 +6,13 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import RefreshModal from "./components/common/refreshModal";
 import InputUserModal from "./components/common/inputUserModal";
+import IntroChar from "./components/ui/home/introChar";
 
 export default function Home() {
   const [userData, setUserData] = useState(null);
   const [openModal, setOpenModal] = useState(false);
   const [openInputUserModal, setOpenInputUserModal] = useState(false);
+  const [playIntro, setPlayIntro] = useState(false);
   const router = useRouter();
   useEffect(() => {
     document.body.setAttribute("data-route", "/");
@@ -73,8 +75,13 @@ export default function Home() {
       )}
 
       {openInputUserModal && (
-        <InputUserModal onClose={() => setOpenInputUserModal(false)} />
+        <InputUserModal
+          onClose={() => setOpenInputUserModal(false)}
+          setPlayIntro={setPlayIntro}
+        />
       )}
+
+      {playIntro && <IntroChar />}
     </>
   );
 }

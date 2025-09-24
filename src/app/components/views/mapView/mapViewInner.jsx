@@ -141,7 +141,7 @@ function NextMarkerButton({ setMarkerNow, markerNow }) {
 
   return (
     <button
-      className="absolute right-2 top-2 z-[9999] bg-orange-400 text-white px-2 py-1"
+      className="absolute right-2 top-2 z-[999] bg-orange-400 text-white px-2 py-1"
       onClick={handleNextMarker}
     >
       Next Marker

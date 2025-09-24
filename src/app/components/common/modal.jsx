@@ -7,7 +7,7 @@ export default function Modal({
   intro = false,
   addFnc,
   className,
-  disableClose = true,
+  disableClose = false,
 }) {
   const [close, setClose] = useState(false);
   const timeoutRef = useRef();

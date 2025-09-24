@@ -2,7 +2,7 @@ import { useState } from "react";
 import Modal from "./modal";
 import { toast } from "sonner";
 
-export default function InputUserModal({ onClose }) {
+export default function InputUserModal({ onClose, setPlayIntro }) {
   const [name, setName] = useState("");
   const [closed, setClosed] = useState(false);
   const handleSubmit = () => {
@@ -14,6 +14,7 @@ export default function InputUserModal({ onClose }) {
         "userData",
         JSON.stringify({ ...JSON.parse(stored), name })
       );
+      setPlayIntro(true);
       return toast.success("Selamat datang " + name);
     }
     const data = {
@@ -22,11 +23,17 @@ export default function InputUserModal({ onClose }) {
       name,
     };
     localStorage.setItem("userData", JSON.stringify(data));
+    setPlayIntro(true);
     return toast.success("Selamat datang " + name);
   };
   return (
     <>
-      <Modal onClose={onClose} closed={closed} className="max-w-[300px]">
+      <Modal
+        onClose={onClose}
+        closed={closed}
+        className="max-w-[300px]"
+        disableClose
+      >
         <div className="flex flex-col gap-4">
           <h1 className="text-2xl font-bold text-orange-500">
             Selamat Datang di Peta Interaktif
