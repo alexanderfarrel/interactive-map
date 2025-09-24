@@ -7,6 +7,7 @@ export default function Modal({
   intro = false,
   addFnc,
   className,
+  disableClose = true,
 }) {
   const [close, setClose] = useState(false);
   const timeoutRef = useRef();
@@ -27,6 +28,7 @@ export default function Modal({
     }
     const handleClickOutside = (event) => {
       if (ref.current && !ref.current.contains(event.target)) {
+        if (disableClose && closed == false) return;
         handleClose();
       }
     };

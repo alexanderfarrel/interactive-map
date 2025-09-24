@@ -4,11 +4,17 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import { useTransitionRouter } from "next-view-transitions";
 
-export default function Navbar({ isFixHeight = false }) {
+export default function Navbar({ isFixHeight = false, custState = false }) {
   const [scrollY, setScrollY] = useState(0);
   const [mounted, setMounted] = useState(false);
+  const [userData, setUserData] = useState(null);
   const path = usePathname();
   const router = useTransitionRouter();
+
+  useEffect(() => {
+    const stored = localStorage.getItem("userData");
+    setUserData(JSON.parse(stored));
+  }, [custState]);
 
   useEffect(() => {
     setMounted(true);
@@ -43,7 +49,9 @@ export default function Navbar({ isFixHeight = false }) {
           height={50}
         />
         <div>
-          <h1 className="font-semibold text-xl">Interactive Map</h1>
+          <h1 className="font-semibold text-xl max-w-[200px] truncate">{`Halo ${
+            userData.name || "User"
+          }`}</h1>
         </div>
       </div>
     </nav>

@@ -5,16 +5,22 @@ import Navbar from "./components/layout/navbar";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import RefreshModal from "./components/common/refreshModal";
+import InputUserModal from "./components/common/inputUserModal";
 
 export default function Home() {
   const [userData, setUserData] = useState(null);
   const [openModal, setOpenModal] = useState(false);
+  const [openInputUserModal, setOpenInputUserModal] = useState(false);
   const router = useRouter();
   useEffect(() => {
     document.body.setAttribute("data-route", "/");
 
     const stored = localStorage.getItem("userData");
     if (stored && stored != null && stored != "null") {
+      const parsing = JSON.parse(stored);
+      if (!parsing.name || parsing.name == "") {
+        setOpenInputUserModal(true);
+      }
       setUserData(JSON.parse(stored));
       return;
     }
@@ -34,11 +40,12 @@ export default function Home() {
     localStorage.setItem("userData", JSON.stringify(data));
     setUserData(data);
     router.refresh();
+    setOpenInputUserModal(true);
   };
 
   return (
     <>
-      <Navbar isFixHeight />
+      <Navbar isFixHeight custState={openInputUserModal} />
       <div className="w-full min-h-[100dvh] flex flex-col p-5 pb-0 relative">
         <div className="w-full h-full max-w-6xl mx-auto border-4 border-orange-400 mt-12 relative">
           <MapView />
@@ -49,7 +56,9 @@ export default function Home() {
           </p>
           <button
             className="px-2 py-1 bg-red-300 text-red-600 rounded-lg hover:bg-red-400"
-            onClick={() => setOpenModal(true)}
+            onClick={() => {
+              setOpenModal(true);
+            }}
           >
             Refresh Point
           </button>
@@ -61,6 +70,10 @@ export default function Home() {
           setOpenModal={setOpenModal}
           handleClearLocalStorage={handleClearLocalStorage}
         />
+      )}
+
+      {openInputUserModal && (
+        <InputUserModal onClose={() => setOpenInputUserModal(false)} />
       )}
     </>
   );

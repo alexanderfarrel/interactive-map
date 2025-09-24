@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import Modal from "./modal";
 import { toast } from "sonner";
 import { useTransitionRouter } from "next-view-transitions";
@@ -37,11 +37,26 @@ export default function KuisModal({
       userData.point += 5;
       userData.answeredKuis.push(title);
       localStorage.setItem("userData", JSON.stringify(userData));
-      toast.success("Jawaban kamu benar +5 point");
+      toast.success(
+        <div>
+          <p>
+            Selamat <span className="font-bold">{userData.name || "User"}</span>{" "}
+            Jawaban Kamu Benar!
+          </p>
+          <p className="text-center">+5 point</p>
+        </div>
+      );
     } else {
       userData.answeredKuis.push(title);
       localStorage.setItem("userData", JSON.stringify(userData));
-      toast.error("Jawaban kamu salah");
+      toast.error(
+        <div>
+          <p>
+            Opps, <span className="font-bold">{userData.name || "User"}</span>{" "}
+            Jawaban Kamu Salah!
+          </p>
+        </div>
+      );
     }
 
     setTimeout(() => {
