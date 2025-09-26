@@ -3,13 +3,7 @@ import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { Marker, Popup } from "react-leaflet";
 
-export default function CustomMarker({
-  position,
-  imageUrl = "",
-  title,
-  description,
-  isActive,
-}) {
+export default function CustomMarker({ position, title, isActive }) {
   const markerRef = useRef();
 
   useEffect(() => {
@@ -46,15 +40,13 @@ export default function CustomMarker({
     <Marker position={position} icon={customIcon} ref={markerRef}>
       <Popup className="w-[250px]">
         <div className="flex flex-col text-center justify-center max-w-[250px] w-full">
-          {imageUrl != "" && (
-            <Image
-              src={imageUrl}
-              alt=""
-              width={500}
-              height={500}
-              className="w-full h-full rounded-lg"
-            />
-          )}
+          <Image
+            src={`/images/location/${title}.webp`}
+            alt=""
+            width={500}
+            height={500}
+            className="w-full h-full rounded-lg"
+          />
           <h3 className="font-bold mt-2">{titleFormat}</h3>
           <button
             onClick={() =>

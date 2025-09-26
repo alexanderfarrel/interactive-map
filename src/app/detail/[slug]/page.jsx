@@ -69,21 +69,95 @@ export default function Detail({ params }) {
           <p className="text-orange-400 text-sm text-center">
             Selesaikan Membaca Untuk Mengerjakan Kuis dan Dapatkan Poin
           </p>
-          <section className="text-lg flex flex-col gap-7 md:max-w-[85%] w-full self-start">
+          <section className="text-lg flex flex-col gap-7 md:max-w-[85%] w-full self-start sm_:text-base">
             {data[0].article.map((item, index) => (
               <React.Fragment key={index}>
-                {item.p && <p className="sm_:text-base">{item.p}</p>}
+                {item.p && (
+                  <p
+                    className="whitespace-pre-wrap max-w-full -mt-2"
+                    dangerouslySetInnerHTML={{ __html: item.p }}
+                  />
+                )}
+                {item.title && (
+                  <p
+                    className="whitespace-pre-wrap max-w-full -mt-3"
+                    dangerouslySetInnerHTML={{ __html: item.title }}
+                  />
+                )}
+                {item.sub && (
+                  <p
+                    className="pl-9  -mt-6 max-w-full"
+                    dangerouslySetInnerHTML={{ __html: item.sub }}
+                  />
+                )}
                 {item.l && (
                   <div className="flex flex-col gap-1 -my-3 pl-7">
                     {item.l.map((item, index) => (
                       <li
-                        className="list-outside list-disc my-1 sm_:text-base"
+                        className={`list-outside list-disc my-1 ${
+                          index == 0 && "-mt-1"
+                        }`}
                         key={index}
                       >
                         {item}
                       </li>
                     ))}
                   </div>
+                )}
+                {item.i && (
+                  <>
+                    <Image
+                      src={item.i.url}
+                      alt=""
+                      className="w-full rounded-xl max-w-[500px] mx-auto"
+                      width={1000}
+                      height={1000}
+                    />
+                    <p className="text-sm text-center -mt-3 italic">
+                      {item.i.capt}
+                    </p>
+                  </>
+                )}
+                {item.c && (
+                  <section className="flex flex-col gap-5 w-full">
+                    {item.c.map((c, index) => {
+                      if (c.speaker == 1) {
+                        return (
+                          <div
+                            className="flex gap-2 items-center self-end"
+                            key={index}
+                          >
+                            <p className="p-2 border-2 border-green-400 rounded-xl rounded-br-none ml-16">
+                              {c.text}
+                            </p>
+                            <Image
+                              src="/images/students/student1_pp.png"
+                              alt=""
+                              className="rounded-full w-16 h-16 object-contain"
+                              width={100}
+                              height={100}
+                            />
+                          </div>
+                        );
+                      }
+                      if (c.speaker == 2) {
+                        return (
+                          <div className="flex gap-2 items-center" key={index}>
+                            <Image
+                              src="/images/students/student2_pp.png"
+                              alt=""
+                              className="rounded-full w-16 h-16 object-contain"
+                              width={100}
+                              height={100}
+                            />
+                            <p className="p-2 border-2 border-blue-400 rounded-xl rounded-bl-none mr-16">
+                              {c.text}
+                            </p>
+                          </div>
+                        );
+                      }
+                    })}
+                  </section>
                 )}
               </React.Fragment>
             ))}

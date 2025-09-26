@@ -32,7 +32,7 @@ export default function Home() {
     };
     localStorage.setItem("userData", JSON.stringify(data));
     setUserData(data);
-  }, []);
+  }, [openInputUserModal]);
 
   const handleClearLocalStorage = () => {
     const data = {
@@ -81,7 +81,9 @@ export default function Home() {
         />
       )}
 
-      {playIntro && <IntroChar />}
+      {playIntro && (
+        <IntroChar userData={userData} setPlayIntro={setPlayIntro} />
+      )}
     </>
   );
 }

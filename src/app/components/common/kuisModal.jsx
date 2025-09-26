@@ -71,7 +71,7 @@ export default function KuisModal({
     <>
       <Modal
         onClose={onClose}
-        className={"max-w-[500px] max-h-[85dvh] overflow-y-scroll"}
+        className={"max-w-[500px] max-h-[85dvh] overflow-y-auto"}
         closed={closed}
       >
         <div className="flex flex-col gap-5 select-none">
