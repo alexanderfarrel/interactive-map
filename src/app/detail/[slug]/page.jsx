@@ -52,6 +52,15 @@ export default function Detail({ params }) {
     <>
       <Navbar isFixHeight />
       <div className="w-full h-full relative">
+        <div className="fixed top-0 left-0 w-full h-full opacity-10 z-[-10]">
+          <Image
+            src={`/images/location/${slug}.webp`}
+            className="w-full h-full"
+            width={1000}
+            height={1000}
+            alt="Candi Brahu"
+          />
+        </div>
         <div
           className="fixed top-0 left-0 h-[4px] bg-orange-400 z-10"
           style={{ width: `${progress}%` }}

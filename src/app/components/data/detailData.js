@@ -246,6 +246,14 @@ Nah, ini yang membuat ceritanya semakin menarik! Candi Gentong letaknya tidak ja
 
 Gimana, seru kan membayangkan drama sejarah yang terjadi di tempat ini ratusan tahun lalu? `,
       },
+      {
+        c: [
+          {
+            text: `Tes pemahamanmu tentang Candi Gentong dengan mengerjakan kuis dibawah ini!`,
+            speaker: 1,
+          },
+        ],
+      },
     ],
     question: `Kamu adalah mahasiswa/i departemen arkeologi yang sedang meneliti Candi Gentong. Saat mengamati batu bata penyusunnya, kamu menemukan bahwa ukuran bata lebih kecil dibandingkan bata di Candi Brahu. Sementara itu, seorang rekanmu berpendapat bahwa perbedaan ukuran bata menandakan fungsi yang berbeda antara kedua candi. Apa langkah yang harus kamu lakukan untuk memvalidasi perbedaan fungsi antara Candi Gentong dan Candi Brahu?`,
     option: [
@@ -374,6 +382,14 @@ Ayo kita jelajahi lorong waktu dan menggali fakta-fakta menarik tentang situs ya
         p: `          Jadi, lain kali kamu berkunjung ke Candi Kedaton, cobalah turun ke dalam struktur bawah tanahnya. Tutup mata sebentar, dan bayangkan... Apakah dulu tempat ini dipenuhi suara tetesan air? Atau justru sunyi senyap, digunakan untuk semadi oleh orang-orang suci? Kamu bisa bebas berimajinasi! 
         
         Gimana, semakin penasaran dengan "istana bawah tanah" yang misterius ini?`,
+      },
+      {
+        c: [
+          {
+            text: `Tes pemahamanmu tentang Candi Kedaton dengan mengerjakan kuis dibawah ini!`,
+            speaker: 1,
+          },
+        ],
       },
     ],
     question: `Kamu adalah seorang peneliti yang baru saja menemukan saluran air bata di situs Candi Kedaton. Seorang rekan menyebutkan bahwa itu hanya sisa parit biasa, sementara yang lain berpendapat bahwa saluran itu bagian dari sistem pengairan/irigasi kota Majapahit yang canggih. Apa langkah terbaik untuk memastikan fungsi saluran air di Candi Kedaton? `,
@@ -512,6 +528,14 @@ Ayo kita jelajahi lorong waktu dan menggali fakta-fakta menarik tentang situs ya
       {
         p: `        Jadi, lain kali kamu melihat foto ukiran Garuda dari Candi Menak Jinggo, jangan hanya melihat batu nya. Bayangkan sebuah drama keluarga kerajaan, perang saudara yang memecah belah, dan lahirnya sebuah legenda yang bertahan hingga hari ini. Seru, kan, membayangkan sejarah di balik batu-batu yang bisu ini?`,
       },
+      {
+        c: [
+          {
+            text: `Tes pemahamanmu tentang Candi Minak Djinggo dengan mengerjakan kuis dibawah ini!`,
+            speaker: 1,
+          },
+        ],
+      },
     ],
     custQuestion: true,
     question: [
@@ -632,6 +656,14 @@ Ayo kita jelajahi lorong waktu dan menggali fakta-fakta menarik tentang situs ya
         p: `          Jadi, lain kali kamu mendengar nama "Candi Tikus", jangan bayangkan tempat yang kotor. Bayangkan sebuah kolam ritual yang indah, tempat para bangsawan Majapahit menyucikan diri, dengan air jernih yang mengalir dari pancuran batu berbentuk makara. Namanya mungkin sederhana, tetapi nilainya sungguh luar biasa! 
 
 Gimana, jadi penasaran untuk melihat langsung "spa ritual" dari zaman keemasan Majapahit ini? `,
+      },
+      {
+        c: [
+          {
+            text: `Tes pemahamanmu tentang Candi Tikus dengan mengerjakan kuis dibawah ini!`,
+            speaker: 1,
+          },
+        ],
       },
     ],
     question: `Kamu adalah seorang arkeolog yang meneliti Candi Tikus. Tim peneliti menemukan bekas endapan lumpur tebal di dasar kolam, yang menunjukkan bahwa kolam ini pernah lama tertutup tanah. Warga lokal bertanya apakah benar kolam ini dulu hanya tempat tikus bersarang, bukan situs suci. Apa tindakan terbaik yang harus kamu lakukan untuk menjelaskan fungsi asli Candi Tikus? `,
@@ -766,6 +798,14 @@ Gapura Bajang Ratu mengajarkan kita bahwa: `,
       {
         p: `        Jadi, lain kali kamu berdiri di depan Gapura Bajang Ratu, jangan hanya melihatnya sebagai tumpukan bata. Bayangkan prosesi abad ke-14, di mana para pendeta dan bangsawan berjalan khidmat melewati gerbang ini untuk memperingati sang raja yang wafat di usia muda. Seru, kan, membayangkannya?`,
       },
+      {
+        c: [
+          {
+            text: `Tes pemahamanmu tentang Gapura Bajang Ratu dengan mengerjakan kuis dibawah ini!`,
+            speaker: 1,
+          },
+        ],
+      },
     ],
     question: `Kamu ditunjuk sebagai kepala tim konservasi Gapura Bajang Ratu. Saat inventarisasi awal, tim menemukan retakan di sisi utara gapura, tanda pengikisan pada relief, dan sejumlah bata yang lepas. Warga lokal menginginkan gapura segera dipugar agar kembali seperti semula, sementara beberapa arkeolog meminta penelitian lanjutan dulu sebelum intervensi besar. Bagaimana langkah yang harus kamu ambil sebagai kepala tim konservasi agar keputusan restorasi aman? `,
     option: [
@@ -828,7 +868,7 @@ Gapura Wringin Lawang punya bentuk yang sangat khas, yaitu tipe Candi Bentar. `,
       },
       {
         i: {
-          url: `/images/article/gapura_wringin_lawang.png`,
+          url: `/images/article/gapura_wringin_lawang.jpg`,
           capt: `Gapura Wringin Lawang`,
         },
       },
@@ -897,6 +937,14 @@ Kamu pasti kaget kalau tahu kondisi awal penemuannya! `,
         p: `          Jadi, lain kali kamu melihat foto Gapura Wringin Lawang, jangan cuma lihat tumpukan bata merahnya. Bayangkan ia sebagai pintu gerbang menuju sebuah kota metropolis yang hidup, ramai, dan penuh dengan cerita-cerita besar dari masa keemasan Nusantara. 
 
         Gimana, jadi ingin berdiri di antara dua bagian gapura ini dan membayangkan diri sebagai seorang utusan kerajaan yang akan menghadap raja?`,
+      },
+      {
+        c: [
+          {
+            text: `Tes pemahamanmu tentang Gapura Wringin Lawang dengan mengerjakan kuis dibawah ini!`,
+            speaker: 1,
+          },
+        ],
       },
     ],
     question: `Kamu adalah seorang arkeolog yang sedang melakukan studi lapangan di Gapura Wringin Lawang. Saat melakukan pengukuran, kamu menemukan bahwa beberapa bagian bata mulai retak dan ada tanda-tanda erosi akibat cuaca. Warga lokal mengusulkan untuk segera melakukan pemugaran total agar gapura terlihat utuh kembali. Langkah yang paling tepat untuk menangani kondisi tersebut adalah : `,
@@ -1011,6 +1059,14 @@ Kolam Segaran kemungkinan besar adalah sebuah infrastruktur yang multifungsi. Ia
 
           Jadi, lain kali kamu lihat kolam, coba bayangkan Kolam Segaran. Bayangkan kemegahan ibu kota terbesar yang pernah dimiliki Nusantara ini. Keren, ya?`,
       },
+      {
+        c: [
+          {
+            text: `Tes pemahamanmu tentang Kolam Segaran dengan mengerjakan kuis dibawah ini!`,
+            speaker: 1,
+          },
+        ],
+      },
     ],
     question: `Kamu sedang meneliti Kolam Segaran. Warga setempat bertanya apakah benar piring emas perjamuan masih ada di dasar kolam. Apa langkah tepatmu? `,
     option: [
@@ -1121,6 +1177,14 @@ Yuk, kita telusuri antara fakta sejarah dan cerita rakyat yang melekat pada maka
           Yang lebih penting dari siapa dia, adalah apa yang diwakilinya: sebuah era peralihan, toleransi, dan jalinan budaya yang membentuk Indonesia seperti sekarang. 
 
           kalau kamu berkunjung ke sana, kamu bisa merenungkan sendiri. Apakah ini makam seorang putri dari negeri seberang yang ikut membangun pondasi Islam di Jawa? Ataukah makam seorang wanita shalihah yang dihormati di masanya? Seru, kan, membayangkan berbagai kemungkinannya?`,
+      },
+      {
+        c: [
+          {
+            text: `Tes pemahamanmu tentang Makam Putri Cempo dengan mengerjakan kuis dibawah ini!`,
+            speaker: 1,
+          },
+        ],
       },
     ],
     question: `Kamu diminta menjelaskan ke pengunjung tentang Makam Putri Cempo. Apa langkah tepat yang harus dilakukan?`,
@@ -1244,6 +1308,14 @@ Nah, ini pelajaran berharganya. Keberadaan Makam Troloyo mematahkan anggapan sed
 
 Gimana, jadi penasaran untuk melihat langsung bukti sejarah yang satu ini? `,
       },
+      {
+        c: [
+          {
+            text: `Tes pemahamanmu tentang Makam Tujuh Troloyo dengan mengerjakan kuis dibawah ini!`,
+            speaker: 1,
+          },
+        ],
+      },
     ],
     question: `Kamu sedang meneliti nisan beraksara Arab di Troloyo. Seorang pengunjung berkata bahwa Majapahit sepenuhnya Hindu-Buddha dan tidak ada Islam. Apa respon tepatmu?`,
     option: [
@@ -1366,6 +1438,14 @@ Agar tidak overwhelmed, coba ikuti tips simpel ini: `,
           },
           {
             text: `Iya, ini tempatnya barang-barang yang "hasil gali-gali" selama puluhan tahun. Jangan lupa lihat koleksi kepengnya ya, itu ATM jaman dulu! `,
+            speaker: 1,
+          },
+        ],
+      },
+      {
+        c: [
+          {
+            text: `Tes pemahamanmu tentang Museum Majapahit dengan mengerjakan kuis dibawah ini!`,
             speaker: 1,
           },
         ],
@@ -1512,6 +1592,14 @@ Sekarang, Pendopo Agung menjadi salah satu pusat kunjungan wisata di Trowulan. K
 
 Gimana, jadi ingin ke sana dan berdiri di atas jejak balai raya Kerajaan Majapahit?`,
       },
+      {
+        c: [
+          {
+            text: `Tes pemahamanmu tentang Pendopo Agung dengan mengerjakan kuis dibawah ini!`,
+            speaker: 1,
+          },
+        ],
+      },
     ],
     question: `Seorang peneliti menyebut Pendopo Agung sebagai bekas keraton utama Majapahit. Apa langkah tepatmu?`,
     option: [
@@ -1628,6 +1716,14 @@ Agar lebih jelas, mari kita bandingkan: `,
 
 Gimana, semakin penasaran untuk melihat langsung "panggung raja" dari masa keemasan Nusantara ini?`,
       },
+      {
+        c: [
+          {
+            text: `Tes pemahamanmu tentang Siti Inggil dengan mengerjakan kuis dibawah ini!`,
+            speaker: 1,
+          },
+        ],
+      },
     ],
     question: `Bagaimana menentukan fungsinya?`,
     option: [
@@ -1723,6 +1819,14 @@ Gimana, semakin penasaran untuk melihat langsung "panggung raja" dari masa keema
           Situs Sentonorejo mengingatkan kita bahwa warisan Majapahit itu bukan cuma Candi Brahu atau Bajang Ratu. Kejayaan sebuah peradaban juga tercermin dari tata kota, permukiman, dan kehidupan ekonomi warganya yang maju. Situs ini adalah puzzle penting yang membantu kita memahami ibu kota Majapahit tidak hanya sebagai pusat pemerintahan, tetapi juga sebagai kota yang hidup dan dinamis. 
 
 Gimana, jadi penasaran untuk melihat langsung "apartemen zaman Majapahit" yang penuh teka-teki ini? `,
+      },
+      {
+        c: [
+          {
+            text: `Tes pemahamanmu tentang Situs Umpak Sentonorejo dengan mengerjakan kuis dibawah ini!`,
+            speaker: 1,
+          },
+        ],
       },
     ],
     question: `Kamu menemukan pecahan keramik asing. Langkah tepat?`,
